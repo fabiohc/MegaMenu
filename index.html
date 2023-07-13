@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/homeAction.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="header" class="header cd-main-header">
+      <ul class="cd-header-buttons">
+        <!-- Controlador Menu mobile -->
+
+        <div class="cd-div-button div-button-mobile">
+          <!-- Botões linguage -->
+          <div class="div-flags div-flags-mobile">
+            <div class="flags">
+              <div id="div-brasil">
+                <a
+                  class="lang_switcher_link"
+                  data-language="es-ar"
+                  lang="es-ar"
+                  href="https://www.auvo.com/"
+                >
+                  <img
+                    id="flagbrasil"
+                    class="flag-language"
+                    src="../fonts/Flag_of_Brazil.svg"
+                    src="{{ get_asset_url('/Elements Theme - Mega Menu/images/Flag_of_Brazil.svg') }}"
+                    alt="Português"
+                    title="Português"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="flags">
+              <div>
+                <a
+                  data-language="es-ar"
+                  lang="es-ar"
+                  href="https://www.auvo.com/es-ar/"
+                >
+                  <img
+                    id="flag-espanha"
+                    class="flag-language"
+                    src="../fonts/Flag_of_Spain.svg"
+                    src="{{ get_asset_url('/Elements Theme - Mega Menu/images/Flag_of_Spain.svg') }}"
+                    alt="Espanhol"
+                    title="Español"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Botões Login Teste -->
+
+          <div class="div-button-teste-login">
+            <div class="div-button-teste-mobile button-teste">
+              <a
+                class="cd-ancora-button cd-ancora-button-mobile"
+                href="https://www.auvo.com/testegratis?hsLang=pt-br"
+              >
+                <button
+                  class="cd-buttons-teste-gratis cd-div-button-teste-gratis-mobile"
+                >
+                  Teste Grátis
+                </button>
+              </a>
+            </div>
+
+            <div class="div-button-mobile button-login remove-button">
+              <a
+                class="cd-ancora-button cd-ancora-button-mobile"
+                href="https://app.auvo.com.br/"
+              >
+                <button class="cd-buttons-login cd-div-button-login-mobile">
+                  Login ➜<b>〕</b>
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <li>
+            <a class="cd-nav-trigger cd-nav-trigger-mobile" href="#">
+              <span> </span
+            ></a>
+          </li>
+        </div>
+      </ul>
+
+      <!-- Logo -->
+      <div class="header__container content-wrapper">
+        <div class="header__logo header__logo--main">
+          <div
+            id="hs_cos_wrapper_site_logo"
+            class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-logo"
+            style
+            data-hs-cos-general-type="widget"
+            data-hs-cos-type="module"
+          >
+            <!-- web-default-modules - logo.module -->
+            <span
+              id="hs_cos_wrapper_site_logo_hs_logo_widget"
+              class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_logo"
+              style
+              data-hs-cos-general-type="widget"
+              data-hs-cos-type="logo"
+              ><a
+                href="https://auvo.com.br"
+                id="hs-link-site_logo_hs_logo_widget"
+                style="border-width: 0px; border: 0px"
+                ><img
+                  src="../fonts/logo.svg"
+                  src="{{ get_asset_url('/Elements Theme - Mega Menu/images/logo.svg') }}"
+                  class="hs-image-widget"
+                  style="width: 186px; border-width: 0px; border: 0px"
+                  width="186"
+                  alt="Logo"
+                  title="Auvo" /></a
+            ></span>
+          </div>
+        </div>
+      </div>
+
+      <nav class="cd-nav">
+        <div class="cd-menu-mobile">
+          <ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+            <li class="has-children">
+              <a href="#">Soluções</a>
+              <ul class="cd-secondary-nav is-hidden cd-nav-icons">
+                <li class="go-back"><a href="#0">Menu</a></li>
+
+                <li class="has-children">
+                  <a href="#0">Para gestores</a>
+
+                  <ul class="is-hidden">
+                    <li class="go-back"><a href="#0">Soluções</a></li>
+                    <li>
+                      <a
+                        class="cd-nav-item item-1"
+                        href="https://www.auvo.com/modulo-gestao-de-equipes"
+                      >
+                        <h3>Gestão da Equipe</h3>
+                        <p>
+                          A gestão completa da sua equipe externa, na palma da
+                          mão
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="cd-nav-item item-2"
+                        href="https://www.auvo.com/modulo-pmoc"
+                      >
+                        <h3>PMOC</h3>
+                        <p>
+                          Crie e acompanhe todos os PMOCs de forma digital e
+                          profissional
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="cd-nav-item item-3"
+                        href="https://www.auvo.com/modulo-bi"
+                      >
+                        <h3>BI</h3>
+                        <p>
+                          Monte um BI completo com todos os dados extraídos do
+                          Auvo
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="cd-nav-item item-4"
+                        href="https://auvo.com/modulo-gestao-financeira"
+                      >
+                        <h3>Gestão Financeira</h3>
+                        <p>
+                          Toda a gestão financeira do seu negócio em um único
+                          lugar
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="cd-nav-item item-5"
+                        href="https://auvo.com/modulo-gestao-cobranca-contratos"
+                      >
+                        <h3>Cobranças e Contratos</h3>
+                        <p>
+                          Cobranças automáticas e gestão integral de todos os
+                          contratos
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="cd-nav-item item-6"
+                        href="https://auvo.com/modulo-whatsapp"
+                      >
+                        <h3>WhatsApp</h3>
+                        <p>
+                          Atendimentos centralizados em um único número de
+                          whatsapp
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="cd-nav-item item-7"
+                        href="https://auvo.com/modulo-reembolsos"
+                      >
+                        <h3>Gestão de Reembolso</h3>
+                        <p>
+                          O controle de todos os reembolsos para cada membro da
+                          equipe
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="cd-nav-item item-8"
+                        href="https://auvo.com/modulo-helpdesk"
+                      >
+                        <h3>HelpDesk</h3>
+                        <p>
+                          Receba chamados e monitore os tickets abertos direto
+                          do sistema
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="cd-nav-item item-9"
+                        href="https://auvo.com/auvobank"
+                      >
+                        <h3>AuvoBank</h3>
+                        <p>
+                          A conta digital que integra os meios de pagamento ao
+                          sistema
+                        </p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="has-children">
+                  <a href="#0">Para seus clientes</a>
+                  <ul class="is-hidden">
+                    <li class="go-back"><a href="#0">Soluções</a></li>
+                    <li>
+                      <a
+                        class="cd-nav-item item-22"
+                        href="https://auvo.com/central-do-cliente"
+                      >
+                        <h3>Central do Cliente</h3>
+                        <p>
+                          Plataforma exclusiva do cliente para consultas e
+                          solicitações
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="cd-nav-item item-23"
+                        href="https://auvo.com/pesquisa-de-satisfacao"
+                      >
+                        <h3>Satisfação do Cliente</h3>
+                        <p>
+                          Acompanhe a satisfação dos clientes com pesquisas
+                          automáticas
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="cd-nav-item item-24"
+                        href="https://auvo.com/modulo-relatorios-personalizados"
+                      >
+                        <h3>Relatório Personalizado</h3>
+                        <p>
+                          Relatórios completos conforme a necessidade do seu
+                          cliente
+                        </p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="has-children">
+              <a>Segmentos</a>
+              <ul
+                class="cd-nav-icons cd-secondary-nav is-hidden dropdown-menu-seguimento"
+              >
+                <li class="go-back"><a href="#0">Menu</a></li>
+
+                <div class="cd-menu-mobile-seguimento">
+                  <li class="has-children"></li>
+
+                  <li>
+                    <a
+                      class="cd-nav-item item-15"
+                      href="https://auvo.com/climatizacao-e-refrigeracao"
+                    >
+                      <h3>Climatização e Refrigeração</h3>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="cd-nav-item item-16"
+                      href="https://auvo.com/energia-solar"
+                    >
+                      <h3>Energia Solar</h3>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="cd-nav-item item-17"
+                      href="https://auvo.com/assistencia-tecnica"
+                    >
+                      <h3>Assistência Técnica</h3>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="cd-nav-item item-18"
+                      href="https://auvo.com/facilities"
+                    >
+                      <h3>Facilidades</h3>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="cd-nav-item item-19"
+                      href="https://auvo.com/seguranca-eletronica"
+                    >
+                      <h3>Segurança Eletrônica</h3>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="cd-nav-item item-20"
+                      href="https://auvo.com/geracao-de-energia"
+                    >
+                      <h3>Geração de Energia</h3>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="cd-nav-item item-21"
+                      href="https://auvo.com/manutencao"
+                    >
+                      <h3>Manutenção</h3>
+                    </a>
+                  </li>
+                </div>
+              </ul>
+            </li>
+            <li class="has-children">
+              <a>Aprenda</a>
+              <ul
+                class="cd-nav-icons cd-secondary-nav is-hidden dropdown-menu-aprenda"
+              >
+                <li class="go-back"><a href="#0">Menu</a></li>
+                <div class="container cd-div-container">
+                  <div class="cd-div-title-img-aprenda">
+                    <p class="cd-title-aprenda cd-title-aprenda-mobile">
+                      AuvoCast
+                    </p>
+                    <div class="cd-div-img-aprenda">
+                      <a href="https://www.auvo.com/auvocast">
+                        <img
+                          class="cd-img-aprenda cd-img-aprenda-img"
+                          src="{{ get_asset_url('/Elements Theme - Mega Menu/images/template-previews/BANNER_PODCAST_-_FABIO_E_EDUARDO12_05_1_1.png') }}"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="headerDividerAprenda"></div>
+                  <div class="dropdown-menu-list-aprenda">
+                    <li class="custom-li">
+                      <a
+                        class="cd-nav-item item-10"
+                        href="https://blog.auvo.com"
+                      >
+                        <h3>Blog</h3>
+                        <p>
+                          Conteúdos com os assuntos mais relvantes de cada
+                          segmento
+                        </p>
+                      </a>
+                    </li>
+                    <li class="custom-li">
+                      <a
+                        class="cd-nav-item item-11 cd-nav-item-mobile"
+                        href="https://auvo.com/materiais-ricos"
+                      >
+                        <h3>Materiais Ricos</h3>
+                        <p>
+                          100% grátis e fáceis para usar no crescimento da sua
+                          empresa
+                        </p>
+                      </a>
+                    </li>
+                    <li class="custom-li">
+                      <a
+                        class="cd-nav-item item-12 cd-nav-item-mobile"
+                        href="https://auvo.com/ferramentas-gratuitas"
+                      >
+                        <h3>Ferramentas</h3>
+                        <p>
+                          100% grátis e fáceis para usar no crescimento da sua
+                          empresa
+                        </p>
+                      </a>
+                    </li>
+                  </div>
+                  <li class="custom-li">
+                    <a
+                      class="cd-nav-item item-13 cd-nav-item-mobile"
+                      href="https://auvo.com/video-aulas"
+                    >
+                      <h3>Video Aulas</h3>
+                      <p>
+                        Dicas de aprendizado sobre negócios, gestão, marketing e
+                        vendas
+                      </p>
+                    </a>
+                  </li>
+                  <li class="custom-li">
+                    <a
+                      class="cd-nav-item item-14 cd-nav-item-mobile"
+                      href="https://auvo.com/cursos-para-gestores"
+                    >
+                      <h3>Cursos</h3>
+                      <p>
+                        Para gestores e equipe aproveitarem o melhor do sistema
+                        Auvo
+                      </p>
+                    </a>
+                  </li>
+                </div>
+              </ul>
+            </li>
+            <li>
+              <a href="https://www.auvo.com/indique-e-ganhe">Indique e ganhe</a>
+            </li>
+
+            <!-- Button Mobile -->
+            <div id="button-mobile" class="cd-div-button">
+              <div>
+                <a
+                  class="cd-ancora-button cd-ancora-button-mobile"
+                  href="https://app.auvo.com.br/"
+                >
+                  <button class="cd-buttons-login cd-div-button-login-mobile">
+                    Login ➜<b>〕</b>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </ul>
+        </div>
+
+        <div class="cd-menu">
+          <ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+            <li class="has-children selected">
+              <a id="menu1"class="disabledClick" href="#">Soluções</a>
+              <ul class="cd-secondary-nav cd-nav-icons">
+                <li class="go-back"><a href="#0">Menu</a></li>
+                <div class="container">
+                  <div>
+                    <div class="efeito"></div>
+                    <div>
+                      <a id="empresa" class="option-solution">
+                        <h3 id="menu1Txt1">Para gestores</h3>
+                        <p id="menu1Txt2">
+                          Veja as soluções feitas para gestores de equipes de
+                          campo
+                        </p>
+                      </a>
+                    </div>
+                    <div>
+                      <a id="cliente" class="option-solution">
+                        <h3 id="menu1Txt3">Para seus clientes</h3>
+                        <p id="menu1Txt4">
+                          Veja como o Auvo pode otimizar a gestão com seus
+                          clientes
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="headerDivider"></div>
+
+                  <div id="list-empresa" class="dropdown-menu-empresa">
+                    <ul>
+                      <li class="margintopo">
+                        <a
+                          class="cd-nav-item item-1"
+                          href="https://www.auvo.com/modulo-gestao-de-equipes"
+                        >
+                          <h3 id="menu1Txt5">Gestão da Equipe</h3>
+                          <p id="menu1Txt6">
+                            A gestão completa da sua equipe externa, na palma da
+                            mão
+                          </p>
+                        </a>
+                      </li>
+                      <li class="margintopo">
+                        <a
+                          class="cd-nav-item item-2"
+                          href="https://www.auvo.com/modulo-pmoc"
+                        >
+                          <h3 id="menu1Txt7">PMOC</h3>
+                          <p id="menu1Txt8">
+                            Crie e acompanhe todos os PMOCs de forma digital e
+                            profissional
+                          </p>
+                        </a>
+                      </li>
+                      <li class="margintopo">
+                        <a
+                          class="cd-nav-item item-3"
+                          href="https://www.auvo.com/modulo-bi"
+                        >
+                          <h3 id="menu1Txt9">BI</h3>
+                          <p id="menu1Txt10">
+                            Monte um BI completo com todos os dados extraídos do
+                            Auvo
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="cd-nav-item item-4"
+                          href="https://auvo.com/modulo-gestao-financeira"
+                        >
+                          <h3 id="menu1Txt11">Gestão Financeira</h3>
+                          <p id="menu1Txt12">
+                            Toda a gestão financeira do seu negócio em um único
+                            lugar
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="cd-nav-item item-5"
+                          href="https://auvo.com/modulo-gestao-cobranca-contratos"
+                        >
+                          <h3 id="menu1Txt13">Cobranças e Contratos</h3>
+                          <p id="menu1Txt14">
+                            Cobranças automáticas e gestão integral de todos os
+                            contratos
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="cd-nav-item item-6"
+                          href="https://auvo.com/modulo-whatsapp"
+                        >
+                          <h3 id="menu1Txt15">WhatsApp</h3>
+                          <p id="menu1Txt16">
+                            Atendimentos centralizados em um único número de
+                            whatsapp
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="cd-nav-item item-7"
+                          href="https://auvo.com/modulo-reembolsos"
+                        >
+                          <h3 id="menu1Txt17">Gestão de Reembolso</h3>
+                          <p id="menu1Txt18">
+                            O controle de todos os reembolsos para cada membro
+                            da equipe
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="cd-nav-item item-8"
+                          href="https://auvo.com/modulo-helpdesk"
+                        >
+                          <h3 id="menu1Txt19">HelpDesk</h3>
+                          <p id="menu1Txt20">
+                            Receba chamados e monitore os tickets abertos direto
+                            do sistema
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="cd-nav-item item-9"
+                          href="https://auvo.com/auvobank"
+                        >
+                          <h3 id="menu1Txt21">AuvoBank</h3>
+                          <p id="menu1Txt22">
+                            A conta digital que integra os meios de pagamento ao
+                            sistema
+                          </p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div id="list-cliente" class="dropdown-menu-cliente">
+                    <ul>
+                      <li class="margintopo">
+                        <a
+                          class="cd-nav-item item-22"
+                          href="https://auvo.com/central-do-cliente"
+                        >
+                          <h3 id="menu1Txt23">Central do Cliente</h3>
+                          <p id="menu1Txt24">
+                            Plataforma exclusiva do cliente para consultas e
+                            solicitações
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="cd-nav-item item-23"
+                          href="https://auvo.com/pesquisa-de-satisfacao"
+                        >
+                          <h3 id="menu1Txt25">Satisfação do Cliente</h3>
+                          <p id="menu1Txt26">
+                            Acompanhe a satisfação dos clientes com pesquisas
+                            automáticas
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="cd-nav-item item-24"
+                          href="https://auvo.com/modulo-relatorios-personalizados
+"
+                        >
+                          <h3 id="menu1Txt27">Relatório Personalizado</h3>
+                          <p id="menu1Txt28">
+                            Relatórios completos conforme a necessidade do seu
+                            cliente
+                          </p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </ul>
+            </li>
+            <li class="has-children">
+              <a id="menu2">Segmentos</a>
+              <ul class="cd-nav-icons dropdown-menu dropdown-menu-seguimento">
+                <li class="go-back"><a href="#0">Menu</a></li>
+
+                <div class="cd-menu-aprenda seguimento-list">
+                  <ul class="custom-columns">
+                    <li class="custom-li">
+                      <a
+                        class="cd-nav-item item-15"
+                        href="https://auvo.com/climatizacao-e-refrigeracao"
+                      >
+                        <h3>Climatização e Refrigeração</h3>
+                      </a>
+                    </li>
+                    <li class="custom-li">
+                      <a
+                        class="cd-nav-item item-16"
+                        href="https://auvo.com/energia-solar"
+                      >
+                        <h3>Energia Solar</h3>
+                      </a>
+                    </li>
+                    <li class="custom-li">
+                      <a
+                        class="cd-nav-item item-17"
+                        href="https://auvo.com/assistencia-tecnica"
+                      >
+                        <h3>Assistência Técnica</h3>
+                      </a>
+                    </li>
+                    <li class="custom-li">
+                      <a
+                        class="cd-nav-item item-18"
+                        href="https://auvo.com/facilities"
+                      >
+                        <h3>Facilidades</h3>
+                      </a>
+                    </li>
+                    <li class="custom-li">
+                      <a
+                        class="cd-nav-item item-19"
+                        href="https://auvo.com/seguranca-eletronica"
+                      >
+                        <h3>Segurança Eletrônica</h3>
+                      </a>
+                    </li>
+                    <li class="custom-li">
+                      <a
+                        class="cd-nav-item item-20"
+                        href="https://auvo.com/geracao-de-energia"
+                      >
+                        <h3>Geração de Energia</h3>
+                      </a>
+                    </li>
+                    <li class="custom-li">
+                      <a
+                        class="cd-nav-item item-21"
+                        href="https://auvo.com/manutencao"
+                      >
+                        <h3>Manutenção</h3>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </ul>
+            </li>
+            <li class="has-children">
+              <a id="menu3">Aprenda</a>
+              <ul class="cd-nav-icons dropdown-menu dropdown-menu-aprenda">
+                <li class="go-back"><a href="#0">Menu</a></li>
+                <div class="container">
+                  <div class="cd-div-title-img-aprenda">
+                    <p class="cd-title-aprenda cd-title-aprenda-mobile">
+                      AuvoCast
+                    </p>
+                    <div class="cd-div-img-aprenda">
+                      <a href="https://www.auvo.com/auvocast">
+                        <img
+                          class="cd-img-aprenda cd-img-aprenda-img"
+                          src="{{ get_asset_url('/Elements Theme - Mega Menu/images/template-previews/BANNER_PODCAST_-_FABIO_E_EDUARDO12_05_1_1.png') }}"
+                          alt="AuvoCast"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="headerDividerAprenda"></div>
+                  <div class="custom-columns-aprenda">
+                    <li>
+                      <a
+                        class="cd-nav-item item-10"
+                        href="https://blog.auvo.com"
+                      >
+                        <h3>Blog</h3>
+                        <p>
+                          Conteúdos com os assuntos mais relvantes de cada
+                          segmento
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="cd-nav-item item-11 cd-nav-item-mobile"
+                        href="https://auvo.com/materiais-ricos"
+                      >
+                        <h3>Materiais Ricos</h3>
+                        <p>
+                          Para baixar e se aprofundar em e-books, infográficos e
+                          outros
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="cd-nav-item item-12 cd-nav-item-mobile"
+                        href="https://auvo.com/ferramentas-gratuitas"
+                      >
+                        <h3>Ferramentas</h3>
+                        <p>
+                          100% grátis e fáceis para usar no crescimento da sua
+                          empresa
+                        </p>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        class="cd-nav-item item-13 cd-nav-item-mobile"
+                        href="https://auvo.com/video-aulas"
+                      >
+                        <h3>Video Aulas</h3>
+                        <p>
+                          Dicas de aprendizado sobre negócios, gestão, marketing
+                          e vendas
+                        </p>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        class="cd-nav-item item-14 cd-nav-item-mobile"
+                        href="https://auvo.com/cursos-para-gestores"
+                      >
+                        <h3>Cursos</h3>
+                        <p>
+                          Para gestores e equipe aproveitarem o melhor do
+                          sistema Auvo
+                        </p>
+                      </a>
+                    </li>
+                  </div>
+                </div>
+              </ul>
+            </li>
+            <li>
+              <a id="menu4" href="https://www.auvo.com/indique-e-ganhe">Indique e ganhe</a>
+            </li>
+          </ul>
+          <ul class="cd-header-buttons">
+            <li>
+              <a class="cd-nav-trigger" href="#cd-primary-nav"
+                >Menu<span></span
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main
+      id="main-content"
+      class="body-container-wrapper body-container cd-main-content"
+    >
+      <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script> -->
+      <div class="fixa">
+        <div id="banner">
+          <div id="sliderMobile">
+            <img
+              class="selected"
+              src="images\auvo-imagem-01-750x1360-mobile.webp"
+            />
+            <img src="images\auvo-imagem-02-750x1360-mobile.webp" />
+            <img src="images\auvo-imagem-03-750x1360-mobile.webp" />
+          </div>
+
+          <div id="slider">
+            <img class="selected" src="images\auvo-imagem-01-2400x1109.webp" />
+            <img src="images\auvo-imagem-02-2400x1109.webp" />
+            <img src="images\auvo-imagem-03-2400x1109.webp" />
+          </div>
+        </div>
+        <div class="main-title content">
+          <div>
+            <h1>
+              Com o Auvo <br />você sabe onde está<br />
+              <br />
+              <b>
+                <span class="word"> sua equipe</span>
+                <span class="word"> seus equipamentos</span>
+                <span class="word"> seu dinheiro</span>
+                <br />
+              </b>
+            </h1>
+
+            <p>
+              Em qualquer dispositivo, com o Auvo você simplifica a gestão e
+              aumenta a produtividade da sua equipe externa.
+            </p>
+          </div>
+
+          <div class="div-button-demo">
+            <a href="">
+              <button class="cd-buttons-demo">Solicite uma demonstração</button>
+            </a>
+          </div>
+          <div class="avaliacao-capterra-google">
+            <img src="images\avaliação.png" />
+          </div>
+        </div>
+      </div>
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+      />
+      <a
+        href="https://api.whatsapp.com/send?phone=556239419794&text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20o%20Auvo!"
+        style="
+          position: fixed;
+          width: 60px;
+          height: 60px;
+          bottom: 40px;
+          right: 40px;
+          background-color: #25d366;
+          color: #fff;
+          border-radius: 50px;
+          text-align: center;
+          font-size: 30px;
+          box-shadow: 1px 1px 2px #888;
+          z-index: 1000;
+        "
+        target="_blank"
+      >
+        <i
+          style="
+            margin: 15px;
+            align-items: baseline;
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+            flex-direction: row;
+          "
+          class="bi bi-whatsapp"
+        ></i>
+      </a>
+    </main>
+
+    <div class="sticky-padding"></div>
+
+    <script src="js/jquery-1.7.1.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/headerControl.js"></script>
+    <script src="js/homeAction.js"></script>
+  </body>
+</html>
