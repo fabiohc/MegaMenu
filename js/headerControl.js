@@ -87,117 +87,128 @@ window.addEventListener("DOMContentLoaded", function () {
     imgEspanha.classList.add("grayscale-image");
   }
 });
-
- // Objeto com as traduções em diferentes idiomas
- var traducoes = {
+// Objeto com as traduções em diferentes idiomas
+var traducoes = {
   // portugues: {
-  //   // menu1: "Slutesss",
-  //   // menu1Txt1: "Título de la Página",
-  //   // menu1Txt2: "Menú",
-  //   // menu1Txt3: "Menú",
-  //   // menu1Txt4: "Menú",
-  //   // menu1Txt5: "Menú",
-  //   // menu1Txt6: "Menú",
-  //   // menu1Txt7: "Menú",
-  //   // menu1Txt8: "Menú",
-  //   // menu1Txt9: "Menú",
-  //   // menu1Txt10: "Menú",
-  //   // menu1Txt11: "Menú",
-  //   // menu1Txt12: "Menú",
-  //   // menu1Txt13: "Menú",
-  //   // menu1Txt14: "Menú",
-  //   // menu1Txt15: "Menú",
-  //   // menu1Txt16: "Menú",
-  //   // menu1Txt17: "Menú",
-  //   // menu1Txt18: "Menú",
-  //   // menu1Txt19: "Menú",
-  //   // menu1Txt20: "Menú",
-  //   // menu1Txt21: "Menú",
-  //   // menu1Txt22: "Menú",
-  //   // menu1Txt23: "Menú",
-  //   // menu1Txt24: "Menú",
-  //   // menu1Txt25: "Menú",
-  //   // menu1Txt26: "Menú",
-  //   // menu1Txt27: "Menú"   
   // },
 
   espanhol: {
-    menu1: "Título de la Página",
-    menu1Txt1: "Título de la Página",
-    menu1Txt2: "Menú",
-    menu1Txt3: "Menú",
-    menu1Txt4: "Menú",
-    menu1Txt5: "Menú",
-    menu1Txt6: "Menú",
-    menu1Txt7: "Menú",
-    menu1Txt8: "Menú",
-    menu1Txt9: "Menú",
-    menu1Txt10: "Menú",
-    menu1Txt11: "Menú",
-    menu1Txt12: "Menú",
-    menu1Txt13: "Menú",
-    menu1Txt14: "Menú",
-    menu1Txt15: "Menú",
-    menu1Txt16: "Menú",
-    menu1Txt17: "Menú",
-    menu1Txt18: "Menú",
-    menu1Txt19: "Menú",
-    menu1Txt20: "Menú",
-    menu1Txt21: "Menú",
-    menu1Txt22: "Menú",
-    menu1Txt23: "Menú",
-    menu1Txt24: "Menú",
-    menu1Txt25: "Menú",
-    menu1Txt26: "Menú",
-    menu1Txt27: "Menú"
-  }
-  // Adicione outras traduções necessárias aqui
+    menu1: {
+      menu1: "Solución",
+      menu1Txt1: "Para gestores",
+      menu1Txt2: "Vea las soluciones hechas para gestores de equipos en campo",
+      menu1Txt3: "Para clientes",
+      menu1Txt4: "Vea cómo auvo optimiza la gestión con sus clientes",
+      menu1Txt5: "Gestión de equipos",
+      menu1Txt6:
+        "La gestión completa de su equipo externo, en la palma de su mano",
+      menu1Txt7: "Auvo Pmoc",
+      menu1Txt8:
+        "Crea y acompañe todos los PMOCs de forma digital y profesional",
+      menu1Txt9: "Auvo BI",
+      menu1Txt10: "Monte un BI completo con todos los datos extraídos de Auvo",
+      menu1Txt11: "Auvo Financeiro",
+      menu1Txt12: "Toda la gestión financiera de su negocio en un único lugar",
+      menu1Txt13: "Auvo Cobranza",
+      menu1Txt14:
+        "Cobranza automática y gestión integral de todos los contratos",
+      menu1Txt15: "AuvoChat",
+      menu1Txt16: "Atendimiento centralizado en un único número de whatsapp",
+      menu1Txt17: "Auvo Reembolso",
+      menu1Txt18:
+        "El control de todos los reembolsos para cada miembro del equipo",
+      menu1Txt19: "Menú",
+      menu1Txt20: "Menú",
+      menu1Txt21: "Menú",
+      menu1Txt22: "Menú",
+      menu1Txt23: "Menú",
+      menu1Txt24: "Menú",
+      menu1Txt25: "Menú",
+      menu1Txt26: "Menú",
+      menu1Txt27: "Menú",
+    },
+
+    menu2: {
+      menu2: "Segmentos",
+      menu2Txt1: "Climatizacion y refrigeracion",
+      menu2Txt2: "Energía solar",
+      menu2Txt3: "Asistencia técnica",
+      menu2Txt4: "Facilities",
+      menu2Txt5: "Seguridad electrónica",
+      menu2Txt6: "Generacion de energia",
+      menu2Txt7: "Mantenimiento",
+    },
+    menu3: {
+      menu3: "Aprenda",
+      menu3Txt1: "Blog",
+      menu3Txt2: "Contenidos con los temas más relevantes de cada segmento",
+      menu3Txt3: "Herramientas",
+      menu3Txt4:
+        "100% gratis y fáciles para usar en el crecimiento de su empresa",
+      menu3Txt5: "Cursos",
+      menu3Txt6:
+        "Para que los gestores y equipos aprovechen lo mejor del sistema Auvo",
+      menu3Txt7: "Materiales gratuitos",
+      menu3Txt8: "Para descargar y profundizar en ebooks, infografías y otros",
+      menu3Txt9: "Vídeos Aulas",
+      menu3Txt10:
+        "Consejos de aprendizaje sobre negocios, gestión, marketing y ventas",
+    },
+
+    menu4: {
+      menu4: "Recomienda y Gana",
+    },
+  },
 };
 
 // Função para verificar a URL e definir o idioma
 function verificarIdioma() {
   var url = window.location.href;
-  
-  if (url.indexOf("http://127.0.0.1:5500") === 0) {
-      // Definir conteúdo em espanhol
-      document.getElementById("menu1").innerHTML = traducoes.espanhol.menu1;
-      document.getElementById("menu1Txt1").innerHTML = traducoes.espanhol.menu1Txt1;
-      document.getElementById("menu1Txt2").innerHTML = traducoes.espanhol.menu1Txt2;
-      document.getElementById("menu1Txt3").innerHTML = traducoes.espanhol.menu1Txt3;
-      document.getElementById("menu1Txt4").innerHTML = traducoes.espanhol.menu1Txt4;
-      document.getElementById("menu1Txt5").innerHTML = traducoes.espanhol.menu1Txt5;
-      document.getElementById("menu1Txt6").innerHTML = traducoes.espanhol.menu1Txt6;
-      document.getElementById("menu1Txt7").innerHTML = traducoes.espanhol.menu1Txt7;
-      document.getElementById("menu1Txt8").innerHTML = traducoes.espanhol.menu1Txt8;
-      document.getElementById("menu1Txt9").innerHTML = traducoes.espanhol.menu1Txt9;
-      document.getElementById("menu1Txt10").innerHTML = traducoes.espanhol.menu1Txt10;
-      document.getElementById("menu1Txt11").innerHTML = traducoes.espanhol.menu1Txt11;
-      document.getElementById("menu1Txt12").innerHTML = traducoes.espanhol.menu1Txt12;
-      document.getElementById("menu1Txt13").innerHTML = traducoes.espanhol.menu1Txt13;
-      document.getElementById("menu1Txt14").innerHTML = traducoes.espanhol.menu1Txt14;
-      document.getElementById("menu1Txt15").innerHTML = traducoes.espanhol.menu1Txt15;
-      document.getElementById("menu1Txt16").innerHTML = traducoes.espanhol.menu1Txt16;
-      document.getElementById("menu1Txt17").innerHTML = traducoes.espanhol.menu1Txt17;
-      document.getElementById("menu1Txt18").innerHTML = traducoes.espanhol.menu1Txt18;
-      document.getElementById("menu1Txt19").innerHTML = traducoes.espanhol.menu1Txt19;
-      document.getElementById("menu1Txt20").innerHTML = traducoes.espanhol.menu1Txt20;
-      document.getElementById("menu1Txt21").innerHTML = traducoes.espanhol.menu1Txt21;
-      document.getElementById("menu1Txt22").innerHTML = traducoes.espanhol.menu1Txt22;
-      document.getElementById("menu1Txt23").innerHTML = traducoes.espanhol.menu1Txt23;
-      document.getElementById("menu1Txt24").innerHTML = traducoes.espanhol.menu1Txt24;
-      document.getElementById("menu1Txt25").innerHTML = traducoes.espanhol.menu1Txt25;
-      document.getElementById("menu1Txt26").innerHTML = traducoes.espanhol.menu1Txt26;
-      document.getElementById("menu1Txt27").innerHTML = traducoes.espanhol.menu1Txt27;
-     
-      // Adicione outras alterações necessárias para o idioma espanhol aqui
-   }
-   // else {
-  //     // Definir conteúdo em português (padrão)
-  //     document.getElementById("titulo").innerHTML = traducoes.portugues.titulo;
-  //     document.getElementById("menu").innerHTML = traducoes.portugues.menu;
-  //     // Adicione outras alterações necessárias para o idioma português aqui
-  // }
+
+  if (url.indexOf("teste/") === 0) {
+    // Definir conteúdo em espanhol
+
+    var classMenu1 = document.querySelectorAll("[class*='menu1']");
+
+    classMenu1.forEach((item) => {
+      var nomeClasse = item.className;
+      item.innerHTML = traducoes.espanhol.menu1[nomeClasse];
+    });
+
+    var classMenu2 = document.querySelectorAll("[class*='menu2']");
+
+    classMenu2.forEach((item) => {
+      var nomeClasse = item.className;
+      item.innerHTML = traducoes.espanhol.menu2[nomeClasse];
+    });
+
+    var classMenu3 = document.querySelectorAll("[class*='menu3']");
+
+    classMenu3.forEach((item) => {
+      var nomeClasse = item.className;
+      item.innerHTML = traducoes.espanhol.menu3[nomeClasse];
+    });
+
+    var classMenu4 = document.querySelectorAll("[class*='menu4']");
+
+    classMenu4.forEach((item) => {
+      var nomeClasse = item.className;
+      item.innerHTML = traducoes.espanhol.menu4[nomeClasse];
+    });
+    // Adicione outras alterações necessárias para o idioma espanhol aqui
+  }
+}
+// Get the link element by its ID
+const indiqueEGanheLink = document.getElementById("indiqueEGanheLink");
+
+// Function to handle the click event and redirect the user
+function handleLinkClick(event) {
+  event.preventDefault(); // Prevent the default behavior of the link
+  const destinationURL = indiqueEGanheLink.getAttribute("href"); // Get the destination URL
+  window.location.href = destinationURL; // Redirect the user to the destination URL
 }
 
+// Add a click event listener to the link
+indiqueEGanheLink.addEventListener("click", handleLinkClick);
 // Chamar a função quando a página carregar
 window.onload = verificarIdioma;

@@ -76,6 +76,56 @@ input[type="search"]::-webkit-search-results-decoration {
   opacity: 1; /* Define a opacidade das imagens (0.0 - 1.0) */
 }
 
+.alinha-modulo-novo {
+  width: 120px;
+  display: inline-flex;
+  vertical-align: middle;
+  align-content: stretch;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.modulo-novo {
+  width: 32px;
+  height: 13px;
+  font-size: 7px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #381e55;
+  border-radius: 45px;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  margin-left: 5px;
+  line-height: 2;
+}
+
+@media only screen and (max-width: 450px) {
+  .cd-div-button-teste-gratis-mobile {
+    background-color: #8300e9;
+    border: 0 solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 14px !important;
+    margin-top: 10%;
+    padding: 8%;
+  }
+
+  .div-button-teste-mobile {
+    width: 80px !important;
+    height: 40px !important;
+    padding: 5px 10px 0 0 !important;
+  }
+
+  .div-flags-mobile {
+    height: 50px;
+    justify-content: space-between;
+    display: inline-flex !important;
+    padding: 22px 30px 0 5px;
+  }
+}
+
 @media only screen and (max-width: 1169px) {
   .cd-main-content.nav-is-visible,
   .cd-main-header.nav-is-visible {
@@ -102,7 +152,7 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 
   .cd-title-aprenda-mobile {
-    color: #6d26c2;
+    color: #550e9b;
     font-size: 20px;
     font-weight: 700;
     justify-content: center;
@@ -118,7 +168,7 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 
   .cd-div-button-teste-gratis-mobile {
-    background-color: #6d26c2;
+    background-color: #8300e9;
     border: 0 solid #fff;
     border-radius: 20px;
     color: #fff;
@@ -141,7 +191,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .div-button-mobile {
     display: inline-flex;
-    width: 100%;
+    width: 110%;
     justify-content: space-between;
     padding: 25px 0px 0 0;
   }
@@ -157,7 +207,7 @@ input[type="search"]::-webkit-search-results-decoration {
   .cd-div-button-login-mobile {
     background-color: #fff;
     border: 3px solid #8300e9;
-    border-radius: 20px;
+    border-radius: 40px;
     color: #434343;
     font-size: 16px;
     margin-top: 5%;
@@ -182,11 +232,10 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 
   .div-flags-mobile {
-    width: 70px;
     height: 50px;
     justify-content: space-between;
     display: inline-flex !important;
-    padding: 22px 5px 0 5px;
+    padding: 22px 20px 0 5px;
   }
 
   .flags {
@@ -309,7 +358,7 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 
   .cd-img-aprenda {
-    width: 240px;
+    width: 200px;
     height: 150px;
     border-radius: 15px;
   }
@@ -323,6 +372,8 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .cd-main-header {
     height: 115px;
+    margin: 0 auto;
+    max-width: 1200px;
   }
 
   .cd-main-header:after {
@@ -484,10 +535,6 @@ input[type="search"]::-webkit-search-results-decoration {
     position: absolute;
     right: 5%;
     top: 0px;
-  }
-
-  .header__logo img {
-    max-width: 40%;
   }
 }
 
@@ -697,33 +744,6 @@ input[type="search"]::-webkit-search-results-decoration {
   transform: translateX(4px) translateY(2px) rotate(-45deg);
 }
 
-@media only screen and (max-width: 450px) {
-  .cd-div-button-teste-gratis-mobile {
-    background-color: #8300e9;
-    border: 0 solid #fff;
-    border-radius: 20px;
-    color: #fff;
-    font-size: 12px;
-    margin-top: 10%;
-    padding: 8%;
-  }
-
-  .div-button-teste-mobile {
-    width: 80px;
-    height: 40px;
-    padding: 5px 10px 0 0;
-  }
-  
-  .div-flags-mobile {
-    width: 70px;
-    height: 50px;
-    justify-content: space-between;
-    display: inline-flex !important;
-    padding: 22px 5px 0 5px;
-  } 
-
-}
-
 @media only screen and (min-width: 1170px) {
   .cd-nav-trigger {
     display: none;
@@ -923,221 +943,100 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .cd-primary-nav .cd-nav-icons .cd-nav-item.item-1:before {
-  background-image: url(../fonts/GestaoEquipe.svg);
-}
-.cd-primary-nav .cd-nav-icons .cd-nav-item.item-2:before {
-  background-image: url(../fonts/PMOC.svg);
-}
-.cd-primary-nav .cd-nav-icons .cd-nav-item.item-3:before {
-  background-image: url(../fonts/BI.svg);
-}
-.cd-primary-nav .cd-nav-icons .cd-nav-item.item-4:before {
-  background-image: url(../fonts/GestaoFinanceira.svg);
-}
-.cd-primary-nav .cd-nav-icons .cd-nav-item.item-5:before {
-  background-image: url(../fonts/ContratosCobrancas.svg);
-}
-.cd-primary-nav .cd-nav-icons .cd-nav-item.item-6:before {
-  background-image: url(../fonts/An%C3%BAncios.svg);
-}
-.cd-primary-nav .cd-nav-icons .cd-nav-item.item-7:before {
-  background-image: url(../fonts/GestaoReembolso.svg);
-}
-.cd-primary-nav .cd-nav-icons .cd-nav-item.item-8:before {
-  background-image: url(../fonts/HelpDesk.svg);
-}
-.cd-primary-nav .cd-nav-icons .cd-nav-item.item-9:before {
-  background-image: url(../fonts/AuvoBank.svg);
-}
-.cd-primary-nav .cd-nav-icons .cd-nav-item.item-22:before {
-  background-image: url(../fonts/CentralCliente.svg);
-}
-.cd-primary-nav .cd-nav-icons .cd-nav-item.item-23:before {
-  background-image: url(../fonts/SatisfacaoCliente.svg);
-}
-.cd-primary-nav .cd-nav-icons .cd-nav-item.item-24:before {
-  background-image: url(../fonts/RelatorioPersonalizado.svg);
-}
-.cd-primary-nav .cd-nav-icons .cd-nav-item.item-10:before {
-  background-image: url(../fonts/Blog.svg);
-}
-.cd-primary-nav .cd-nav-icons .cd-nav-item.item-11:before {
-  background-image: url(../fonts/MateriaisRicos.svg);
-}
-.cd-primary-nav .cd-nav-icons .cd-nav-item.item-12:before {
-  background-image: url(../fonts/Ferramentas.svg);
-}
-.cd-primary-nav .cd-nav-icons .cd-nav-item.item-13:before {
-  background-image: url(../fonts/VideoAulas.svg);
-}
-.cd-primary-nav .cd-nav-icons .cd-nav-item.item-14:before {
-  background-image: url(../fonts/Cursos.svg);
-}
-.cd-primary-nav .cd-nav-icons .cd-nav-item.item-15:before {
-  background-image: url(../fonts/ClimatizacaoRefrigeracao.svg);
-}
-.cd-primary-nav .cd-nav-icons .cd-nav-item.item-16:before {
-  background-image: url(../fonts/Energia%20Solar.svg);
-}
-.cd-primary-nav .cd-nav-icons .cd-nav-item.item-17:before {
-  background-image: url(../fonts/AssistenciaTecnica.svg);
-}
-.cd-primary-nav .cd-nav-icons .cd-nav-item.item-18:before {
-  background-image: url(../fonts/Facilities.svg);
-}
-.cd-primary-nav .cd-nav-icons .cd-nav-item.item-19:before {
-  background-image: url(../fonts/SegurancaEletronica.svg);
-}
-.cd-primary-nav .cd-nav-icons .cd-nav-item.item-20:before {
-  background-image: url(../fonts/GeracaoEnergia.svg);
-}
-.cd-primary-nav .cd-nav-icons .cd-nav-item.item-21:before {
-  background-image: url(../fonts/Manuten%C3%A7%C3%A3o.svg);
-}
-
-/* .cd-primary-nav .cd-nav-icons .cd-nav-item.item-1:before {
-  background-image: url({{get_asset_url(
-      "/Elements Theme - Mega Menu/images/GestaoEquipe.svg"
-    )}});
+  background-image: url(../images/GestaoEquipe.svg);
 }
 
 .cd-primary-nav .cd-nav-icons .cd-nav-item.item-2:before {
-  background-image: url({{get_asset_url(
-      "/Elements Theme - Mega Menu/images/PMOC.svg"
-    )}});
+  background-image: url(../images/PMOC.svg);
 }
 
 .cd-primary-nav .cd-nav-icons .cd-nav-item.item-3:before {
-  background-image: url({{get_asset_url(
-      "/Elements Theme - Mega Menu/images/BI.svg"
-    )}});
+  background-image: url(../images/BI.svg);
 }
 
 .cd-primary-nav .cd-nav-icons .cd-nav-item.item-4:before {
-  background-image: url({{get_asset_url(
-      "/Elements Theme - Mega Menu/images/GestaoFinanceira.svg"
-    )}});
+  background-image: url(../images/GestaoFinanceira.svg);
 }
 
 .cd-primary-nav .cd-nav-icons .cd-nav-item.item-5:before {
-  background-image: url({{get_asset_url(
-      "/Elements Theme - Mega Menu/images/ContratosCobrancas.svg"
-    )}});
+  background-image: url(../images/ContratosCobrancas.svg);
 }
 
 .cd-primary-nav .cd-nav-icons .cd-nav-item.item-6:before {
-  background-image: url({{get_asset_url(
-      "/Elements Theme - Mega Menu/images/Anúncios.svg"
-    )}});
+  background-image: url(../images/Anúncios.svg);
 }
 
 .cd-primary-nav .cd-nav-icons .cd-nav-item.item-7:before {
-  background-image: url({{get_asset_url(
-      "/Elements Theme - Mega Menu/images/GestaoReembolso.svg"
-    )}});
+  background-image: url(../images/GestaoReembolso.svg);
 }
 
 .cd-primary-nav .cd-nav-icons .cd-nav-item.item-8:before {
-  background-image: url({{get_asset_url(
-      "/Elements Theme - Mega Menu/images/HelpDesk.svg"
-    )}});
+  background-image: url(../images/HelpDesk.svg);
 }
 
 .cd-primary-nav .cd-nav-icons .cd-nav-item.item-9:before {
-  background-image: url({{get_asset_url(
-      "/Elements Theme - Mega Menu/images/AuvoBank.svg"
-    )}});
+  background-image: url(../images/AuvoBank.svg);
 }
 
 .cd-primary-nav .cd-nav-icons .cd-nav-item.item-22:before {
-  background-image: url({{get_asset_url(
-      "/Elements Theme - Mega Menu/images/CentralCliente.svg"
-    )}});
+  background-image: url(../images/CentralCliente.svg);
 }
 
 .cd-primary-nav .cd-nav-icons .cd-nav-item.item-23:before {
-  background-image: url({{get_asset_url(
-      "/Elements Theme - Mega Menu/images/SatisfacaoCliente.svg"
-    )}});
+  background-image: url(../images/SatisfacaoCliente.svg);
 }
 
 .cd-primary-nav .cd-nav-icons .cd-nav-item.item-24:before {
-  background-image: url({{get_asset_url(
-      "/Elements Theme - Mega Menu/images/RelatorioPersonalizado.svg"
-    )}});
+  background-image: url(../images/RelatorioPersonalizado.svg);
 }
 
 .cd-primary-nav .cd-nav-icons .cd-nav-item.item-10:before {
-  background-image: url({{get_asset_url(
-      "/Elements Theme - Mega Menu/images/Blog.svg"
-    )}});
+  background-image: url(../images/Blog.svg);
 }
 
 .cd-primary-nav .cd-nav-icons .cd-nav-item.item-11:before {
-  background-image: url({{get_asset_url(
-      "/Elements Theme - Mega Menu/images/MateriaisRicos.svg"
-    )}});
+  background-image: url(../images/MateriaisRicos.svg);
 }
 
 .cd-primary-nav .cd-nav-icons .cd-nav-item.item-12:before {
-  background-image: url({{get_asset_url(
-      "/Elements Theme - Mega Menu/images/Ferramentas.svg"
-    )}});
+  background-image: url(../images/Ferramentas.svg);
 }
 
 .cd-primary-nav .cd-nav-icons .cd-nav-item.item-13:before {
-  background-image: url({{get_asset_url(
-      "/Elements Theme - Mega Menu/images/VideoAulas.svg"
-    )}});
+  background-image: url(../images/VideoAulas.svg);
 }
 
 .cd-primary-nav .cd-nav-icons .cd-nav-item.item-14:before {
-  background-image: url({{get_asset_url(
-      "/Elements Theme - Mega Menu/images/Cursos.svg"
-    )}});
+  background-image: url(../images/Cursos.svg);
 }
 
 .cd-primary-nav .cd-nav-icons .cd-nav-item.item-15:before {
-  background-image: url({{get_asset_url(
-      "/Elements Theme - Mega Menu/images/ClimatizacaoRefrigeracao.svg"
-    )}});
+  background-image: url(../images/ClimatizacaoRefrigeracao.svg);
 }
 
 .cd-primary-nav .cd-nav-icons .cd-nav-item.item-16:before {
-  background-image: url({{get_asset_url(
-      "/Elements Theme - Mega Menu/images/Energia Solar.svg"
-    )}});
+  background-image: url(../images/Energia Solar.svg);
 }
 
 .cd-primary-nav .cd-nav-icons .cd-nav-item.item-17:before {
-  background-image: url({{get_asset_url(
-      "/Elements Theme - Mega Menu/images/AssistenciaTecnica.svg"
-    )}});
+  background-image: url(../images/AssistenciaTecnica.svg);
 }
 
 .cd-primary-nav .cd-nav-icons .cd-nav-item.item-18:before {
-  background-image: url({{get_asset_url(
-      "/Elements Theme - Mega Menu/images/Facilities.svg"
-    )}});
+  background-image: url(../images/Facilities.svg);
 }
 
 .cd-primary-nav .cd-nav-icons .cd-nav-item.item-19:before {
-  background-image: url({{get_asset_url(
-      "/Elements Theme - Mega Menu/images/SegurancaEletronica.svg"
-    )}});
+  background-image: url(../images/SegurancaEletronica.svg);
 }
 
 .cd-primary-nav .cd-nav-icons .cd-nav-item.item-20:before {
-  background-image: url({{get_asset_url(
-      "/Elements Theme - Mega Menu/images/GeracaoEnergia.svg"
-    )}});
+  background-image: url(../images/GeracaoEnergia.svg);
 }
 
 .cd-primary-nav .cd-nav-icons .cd-nav-item.item-21:before {
-  background-image: url({{get_asset_url(
-      "/Elements Theme - Mega Menu/images/Manutenção.svg"
-    )}});
-} */
+  background-image: url(../images/Manutenção.svg);
+}
 
 @media only screen and (max-width: 1169px) {
   .cd-primary-nav {
@@ -1165,6 +1064,9 @@ input[type="search"]::-webkit-search-results-decoration {
   .has-children {
     list-style: none !important;
   }
+  .header__logo img {
+    max-width: 40% !important;
+  }
 }
 
 @media only screen and (min-width: 1170px) {
@@ -1186,10 +1088,10 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .div-flags {
     width: max-content;
-    height: 50px;
+    height: 80px;
     justify-content: space-between;
     display: inline-flex !important;
-    padding: 30px 0px 0 0px;
+    padding: 30px 50px 0px 0px;
   }
 
   #div-brasil {
@@ -1383,10 +1285,11 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .cd-div-button {
     display: flex;
-    width: 350px;
+    width: 390px;
     max-width: 100%;
     max-height: 100px;
     padding-top: 11px;
+    max-width: 350px;
   }
 
   #button-mobile {
@@ -1601,14 +1504,20 @@ input[type="search"]::-webkit-search-results-decoration {
     -moz-transition: color 0.3s, box-shadow 0.3s;
     transition: color 0.3s, box-shadow 0.3s;
   }
-
+  /* 
   .cd-primary-nav > li > a:active {
+    pointer-events: none;
+    color: #6d26c2 !important;
+  }
+   */
+
+  .cd-primary-nav > li > .removeClick:active {
     pointer-events: none;
     color: #6d26c2 !important;
   }
 
   .cd-primary-nav > li > a:hover {
-    color: #6d26c2 !important;
+    color: #6d26c2;
   }
 
   .cd-primary-nav > li > a.selected {
@@ -1639,8 +1548,13 @@ input[type="search"]::-webkit-search-results-decoration {
     -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
     transition: opacity 0.3s 0s, visibility 0s 0s;
     width: 1300px;
-    max-width: 130%;
-    right: 10%;
+    max-width: 100%;
+    right: 5%;
+    border-radius: 10px;
+  }
+
+  .fit-content {
+    max-width: fit-content;
   }
 
   .cd-primary-nav .cd-nav-gallery:after,
@@ -1902,7 +1816,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .cd-primary-nav .cd-nav-icons .cd-nav-item {
     border-bottom: none;
-    height: 85px;
+    height: 90px;
     justify-content: flex-start;
     line-height: 1.2;
     padding: 11px 10px 10px 60px;
@@ -2394,4 +2308,8 @@ input[type="search"]::-webkit-search-results-decoration {
   .no-js .nav-is-fixed .cd-primary-nav {
     position: fixed;
   }
+}
+
+#indiqueEGanheLink {
+  cursor: pointer;
 }
